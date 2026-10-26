@@ -1,6 +1,6 @@
 const SITE_CONFIG = {
   name: "Farah Irdina",
-  cvHref: "https://drive.google.com/file/d/1o-vOu_G05d0oi1UEuhJMvrzQcdzFVR4P/view?usp=drive_link",
+  cvHref: "https://drive.google.com/file/d/1r4dm2BzVVd3CfuEgRJrCqR3vhMQc_fdW/view?usp=drive_link",
   sections: [
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
