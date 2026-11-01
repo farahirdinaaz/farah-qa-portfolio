@@ -191,6 +191,18 @@ section .section-sub{ color: var(--ink-soft); margin: 0 0 34px; max-width: 56ch;
   font-size: 0.85rem; color: var(--lilac-deep); font-weight: 600;
   background: var(--surface); border-radius: 3px; padding: 7px 12px; margin-top: 6px;
 }
+.project-card + .project-card{ margin-top: 20px; }
+.project-card code{
+  font-family: var(--mono); font-size: 0.85em;
+  background: var(--surface); padding: 1px 5px; border-radius: 3px;
+}
+.project-link{
+  display: inline-block; margin-top: 6px;
+  font-weight: 600; font-size: 0.9rem;
+  color: var(--lilac-deep); text-decoration: none;
+  border-bottom: 1px solid var(--lilac-deep);
+}
+.project-link:hover{ color: var(--ink); border-color: var(--ink); }
 
 /* ---------- EDUCATION ---------- */
 .edu-row{ display:flex; justify-content: space-between; gap: 16px; flex-wrap:wrap; margin-bottom: 18px; }

@@ -173,18 +173,49 @@
   </section>
 
   <section id="project" class="wrap">
-    <h2>Project (WIP)</h2>
+    <h2>Projects (WIP)</h2>
     <p class="section-sub">Where I've owned QA end-to-end, not just executed it.</p>
+
+    <div class="project-card">
+      <h3>Juice Shop — Playwright Test Automation</h3>
+      <div class="stack">Playwright · TypeScript · Page Object Model · Docker · GitHub Actions</div>
+      <p>
+        Automated UI tests for OWASP Juice Shop, built with Playwright and
+        TypeScript using the Page Object Model. The suite covers the home page,
+        catalog and search, basket, the full checkout journey from search to
+        order confirmation, and login, including a wrong-password error and an
+        empty-form check.
+      </p>
+      <p>
+        Every test registers its own user through the API, so each one gets its
+        own basket and tests run in parallel without affecting each other. All
+        test data lives in one config file, and tests wait for real events
+        instead of fixed delays. On failure, Playwright keeps a screenshot, a
+        video and a trace. A GitHub Actions pipeline starts Juice Shop, runs the
+        tests on Chromium and uploads the report and traces.
+      </p>
+      <a class="project-link" href="https://github.com/farahirdinaaz/playwright-juiceshop" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+
     <div class="project-card">
       <h3>TEPAT — Truth Evaluation &amp; Precision Analysis Tool</h3>
-      <div class="stack">React.js · NLP/ML backend · Full SDLC ownership</div>
+      <div class="stack">React.js · FastAPI · MySQL · Fine-tuned BERT (NLP) · Agile</div>
       <p>
-        Co-developed a full-stack content evaluation web app, pairing a responsive
-        React frontend with an NLP/ML backend that classifies misleading text.
-        I led the project from requirements gathering through system and UAT
-        testing, designing a validation framework that audited large dataset
-        inputs, verified ML classification accuracy, and eliminated critical
-        edge-case bugs across the application.
+        Final year project at IIUM, co-developed: a full-stack web app that
+        classifies online content as truth, misinformation or fake news using
+        NLP and a fine-tuned BERT model. It lists supporting articles with
+        stance scoring so users can verify claims, and adds an educational
+        dashboard fed by real-time RSS news, a social media simulation game,
+        and a discrepancy-reporting system for community feedback.
+      </p>
+      <p>
+        I led the QA side from requirements to release. We gathered requirements
+        through two interviews and a 208-respondent questionnaire, then I
+        designed a validation framework that audited large dataset inputs and
+        verified ML classification accuracy. I ran UAT with three testers from
+        different backgrounds across five areas (search and results,
+        discrepancy reporting, educational dashboard, simulation game,
+        authentication), and all passed.
       </p>
       <span class="award">🏆 Most Promising Project Award · IGIIDEATION 2026 Silver Award</span>
     </div>

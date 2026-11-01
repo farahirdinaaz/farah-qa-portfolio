@@ -5,7 +5,7 @@ const SITE_CONFIG = {
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
-    { id: "project", label: "Project" },
+    { id: "project", label: "Projects" },
     { id: "education", label: "Education" },
     { id: "certification", label: "Certification" },
     { id: "contact", label: "Contact" }
