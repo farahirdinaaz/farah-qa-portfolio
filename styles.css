@@ -28,9 +28,10 @@ body{
   background: var(--bg);
   color: var(--ink);
   font-family: var(--sans);
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a{ color: var(--lilac-deep); }
@@ -239,6 +240,14 @@ footer.site{
   .status-strip{ top: 57px; }
   .case-meta{ margin-left: 0; }
   .hero{ padding: 56px 0 44px; }
+  
+  /* Tambah ruang margin kiri dan kanan khas untuk mobile view */
+  .wrap {
+    padding: 0 20px;
+  }
+  .nav-inner {
+    padding: 16px 20px;
+  }
 }
 
 /* --- Hero Layout & Photo Styling --- */
@@ -247,13 +256,6 @@ footer.site{
   grid-template-columns: 1fr;
   gap: 2.5rem;
   align-items: center;
-}
-
-@media (min-width: 860px) {
-  .hero-grid {
-    grid-template-columns: 1.25fr 0.75fr;
-    gap: 3.5rem;
-  }
 }
 
 .hero-image-wrap {
@@ -267,16 +269,16 @@ footer.site{
   height: 280px;
   border-radius: 50%;
   overflow: hidden;
-  border: 4px solid var(--border-color, #e5e7eb);
+  border: 4px solid var(--line);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
-  background-color: #f3f4f6;
+  background-color: var(--surface);
   flex-shrink: 0;
 }
 
-@media (min-width: 860px) {
+@media (max-width: 860px) {
   .photo-frame {
-    width: 320px;
-    height: 320px;
+    width: 220px;
+    height: 220px;
   }
 }
 
